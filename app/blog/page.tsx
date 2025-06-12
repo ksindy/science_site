@@ -11,7 +11,7 @@ export default function BlogPage() {
       readTime: "8 min read",
       excerpt:
         "Teaching students about grouping organisms. Emphasis on microorganisms in relation to taxonomy, pylogeny, and size.",
-      image: "/grouping_microorganisms?height=200&width=400",
+      image: "/grouping_microorganisms.png?height=200&width=400",
       category: "Activity",
       featured: true,
     },
