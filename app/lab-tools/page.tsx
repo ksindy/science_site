@@ -140,7 +140,7 @@ export default function LabToolsPage() {
                         <Star className="h-4 w-4 mr-1 fill-yellow-400 text-yellow-400" />
                         {tool.rating}
                       </div>
-                      <Badge variant="outline" size="sm">
+                     <Badge variant="outline">
                         {tool.category}
                       </Badge>
                     </div>
