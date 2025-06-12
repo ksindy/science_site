@@ -169,10 +169,10 @@ export default function AboutPage() {
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-8">
               <blockquote className="text-lg text-slate-700 leading-relaxed italic">
-                "Excellence in laboratory science comes from the perfect balance of rigorous methodology, innovative
+                &quot;Excellence in laboratory science comes from the perfect balance of rigorous methodology, innovative
                 thinking, and unwavering commitment to safety. My goal is to create environments where scientific
                 discovery thrives while maintaining the highest standards of operational excellence and educational
-                impact."
+                impact.&quot;
               </blockquote>
               <footer className="mt-4 text-right">
                 <cite className="text-slate-600 font-medium">— Karly Sindy </cite>
