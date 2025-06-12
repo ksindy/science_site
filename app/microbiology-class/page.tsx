@@ -198,10 +198,10 @@ export default function MicrobiologyClassPage() {
                     <div>
                       <CardTitle className="text-lg leading-tight">{resource.title}</CardTitle>
                       <div className="flex items-center gap-2 mt-1">
-                        <Badge variant="outline" size="sm">
+                        <Badge variant="outline" className="text-sm px-2 py-0.5">
                           {resource.category}
                         </Badge>
-                        <Badge variant="secondary" size="sm">
+                        <Badge variant="secondary" className="text-sm px-2 py-0.5">
                           {resource.week}
                         </Badge>
                       </div>
