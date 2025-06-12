@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, User } from "lucide-react"
@@ -14,6 +15,7 @@ export default function BlogPage() {
       image: "/grouping_microorganisms.png?height=200&width=400",
       category: "Activity",
       featured: true,
+      slug: "grouping-microorganisms-activity",
     },
     {
       title: "Safety Protocol Updates for Biosafety Level 2 Labs",
@@ -92,10 +94,11 @@ export default function BlogPage() {
         {blogPosts
           .filter((post) => post.featured)
           .map((post, index) => (
+            <Link href={`/blog/${post.slug}`} passHref>
             <Card key={index} className="mb-12 overflow-hidden hover:shadow-lg transition-shadow">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="aspect-video lg:aspect-auto relative">
-                  <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
+                  <Image src={post.image || "/grouping_microorganisms.png"} alt={post.title} fill className="object-cover" />
                 </div>
                 <div className="p-8 flex flex-col justify-center">
                   <div className="flex items-center gap-4 mb-4">
@@ -121,6 +124,7 @@ export default function BlogPage() {
                 </div>
               </div>
             </Card>
+          </Link>
           ))}
 
         {/* Blog Posts Grid */}
