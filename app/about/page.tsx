@@ -69,7 +69,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <h1 className="text-4xl font-bold text-slate-900">About Dr. Sarah Chen</h1>
+            <h1 className="text-4xl font-bold text-slate-900">About Karly Sindy</h1>
             <p className="text-lg text-slate-600 leading-relaxed">
               With over a decade of experience in laboratory management and microbiology education, I am passionate
               about advancing scientific excellence through innovative laboratory practices and inspiring the next
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <div className="flex justify-center lg:justify-end">
             <Image
               src="/placeholder.svg?height=500&width=400"
-              alt="Dr. Sarah Chen in laboratory setting"
+              alt="Karly Sindy in laboratory setting"
               width={400}
               height={500}
               className="rounded-lg shadow-lg"
@@ -175,7 +175,7 @@ export default function AboutPage() {
                 impact."
               </blockquote>
               <footer className="mt-4 text-right">
-                <cite className="text-slate-600 font-medium">— Dr. Sarah Chen</cite>
+                <cite className="text-slate-600 font-medium">— Karly Sindy </cite>
               </footer>
             </CardContent>
           </Card>
