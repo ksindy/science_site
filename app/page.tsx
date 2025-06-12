@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">Dr. Sarah Chen</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">Karly Sindy</h1>
                 <p className="text-xl text-blue-600 font-medium">Lab Manager & Microbiology Instructor</p>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   Advancing laboratory excellence through innovative management practices and inspiring the next
@@ -40,7 +40,7 @@ export default function HomePage() {
               <div className="relative">
                 <Image
                   src="/placeholder.svg?height=400&width=320"
-                  alt="Dr. Sarah Chen - Professional headshot"
+                  alt="Karly Sindy - Professional headshot"
                   width={320}
                   height={400}
                   className="rounded-lg shadow-lg"

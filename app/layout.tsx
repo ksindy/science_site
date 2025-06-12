@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dr. Sarah Chen - Lab Manager & Microbiology Instructor",
+  title: "Karly Sindy - Lab Manager & Microbiology Instructor",
   description: "Professional website for lab management expertise and microbiology education resources",
 }
 
