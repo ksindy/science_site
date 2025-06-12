@@ -92,10 +92,10 @@ export default function BlogPage() {
 
         {/* Featured Post */}
         {blogPosts
-          .filter((post) => post.featured)
-          .map((post, index) => (
-            <Link href={`/blog/${post.slug}`} passHref>
-            <Card key={index} className="mb-12 overflow-hidden hover:shadow-lg transition-shadow">
+        .filter((post) => !post.featured)
+        .map((post, index) => (
+          <Link href={`/blog/${post.slug}`} key={index} className="block">
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="aspect-video lg:aspect-auto relative">
                   <Image src={post.image || "/grouping_microorganisms.png"} alt={post.title} fill className="object-cover" />

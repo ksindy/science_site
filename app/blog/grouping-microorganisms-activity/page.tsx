@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { blogPosts } from "../../data/blogPosts" // OR define it inline for now
+import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -16,7 +16,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="flex items-center"><Clock className="h-4 w-4 mr-1" />{post.readTime}</div>
       </div>
       <p className="text-lg leading-relaxed">{post.excerpt}</p>
-      {/* Add full blog content here later */}
+      {/* TODO: Add full blog content here */}
     </div>
   )
 }
