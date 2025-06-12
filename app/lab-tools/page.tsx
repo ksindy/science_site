@@ -186,7 +186,7 @@ export default function LabToolsPage() {
                         {tool.rating}
                       </div>
                     </div>
-                    <Badge variant="outline" size="sm" className="w-fit">
+                    <Badge variant="outline" className="w-fit text-sm px-2 py-0.5">
                       {tool.category}
                     </Badge>
                   </CardHeader>
