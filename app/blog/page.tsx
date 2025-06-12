@@ -6,13 +6,13 @@ import { Calendar, Clock, User } from "lucide-react"
 export default function BlogPage() {
   const blogPosts = [
     {
-      title: "Implementing Digital Lab Inventory Management",
-      date: "March 15, 2024",
+      title: "Grouping Microorganisms Activity",
+      date: "June 12, 2024",
       readTime: "8 min read",
       excerpt:
-        "How we reduced inventory errors by 85% through digital tracking systems and automated reorder protocols. This comprehensive guide covers the implementation process, challenges faced, and measurable outcomes.",
-      image: "/placeholder.svg?height=200&width=400",
-      category: "Lab Management",
+        "Teaching students about grouping organisms. Emphasis on microorganisms in relation to taxonomy, pylogeny, and size.",
+      image: "/grouping_microorganisms?height=200&width=400",
+      category: "Activity",
       featured: true,
     },
     {
