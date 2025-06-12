@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { blogPosts } from "@/data/blogPosts" // OR define it inline for now
+import { blogPosts } from "../../data/blogPosts" // OR define it inline for now
 import { Calendar, Clock, User } from "lucide-react"
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
