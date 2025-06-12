@@ -20,7 +20,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="text-xl font-semibold text-slate-900">
-            Dr. Sarah Chen
+            Karly Sindy
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

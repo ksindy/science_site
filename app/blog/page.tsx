@@ -107,7 +107,7 @@ export default function BlogPage() {
                   <div className="flex items-center text-sm text-slate-500 space-x-4">
                     <div className="flex items-center">
                       <User className="h-4 w-4 mr-1" />
-                      Dr. Sarah Chen
+                      Karly Sindy
                     </div>
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-1" />

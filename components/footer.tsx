@@ -59,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-slate-600">
-          <p>&copy; 2024 Dr. Sarah Chen. All rights reserved.</p>
+          <p>&copy; 2025 Karly Sindy. All rights reserved.</p>
         </div>
       </div>
     </footer>
