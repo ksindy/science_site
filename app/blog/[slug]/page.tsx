@@ -2,13 +2,7 @@ import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
 
-type PageProps = {
-  params: {
-    slug: string
-  }
-}
-
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug)
 
   if (!post) return notFound()
