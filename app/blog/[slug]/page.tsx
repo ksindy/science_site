@@ -2,7 +2,11 @@ import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+type Props = {
+  params: { slug: string }
+}
+
+export default function Page({ params }: Props) {
   const post = blogPosts.find((p) => p.slug === params.slug)
 
   if (!post) return notFound()
@@ -16,7 +20,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="flex items-center"><Clock className="h-4 w-4 mr-1" />{post.readTime}</div>
       </div>
       <p className="text-lg leading-relaxed">{post.excerpt}</p>
-      {/* TODO: Add full blog content here */}
     </div>
   )
 }
