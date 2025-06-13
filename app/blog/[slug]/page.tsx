@@ -20,7 +20,6 @@ export default function Page({ params }: { params: { slug: string } }) {
   )
 }
 
-// Optional: for static generation of all posts
 export function generateStaticParams() {
   return blogPosts.map(post => ({ slug: post.slug }))
 }
