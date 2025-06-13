@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { blogPosts } from "../data/blogPosts"
+import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
 
 export default function Page({ params }: { params: { slug: string } }) {
