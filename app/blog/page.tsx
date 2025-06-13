@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, User } from "lucide-react"
 
-export default function BlogPage() {
+export default function Page({ params }: { params: { slug: string } }) {
   const blogPosts = [
     {
       title: "Grouping Microorganisms Activity",
