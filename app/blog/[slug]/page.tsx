@@ -6,7 +6,7 @@ type Props = {
   params: { slug: string }
 }
 
-export default function Page({ params }: Props) {
+export default function Page({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug)
 
   if (!post) return notFound()
