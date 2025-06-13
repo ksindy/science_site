@@ -1,9 +1,9 @@
 // app/blog/page.tsx
 import Image from "next/image"
 import Link from "next/link"
-import { blogPosts } from "@/data/blogPosts"
+import { blogPosts } from "../data/blogPosts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "../../components/ui/badge"
 import { Calendar, Clock, User } from "lucide-react"
 
 export default function Page() {
