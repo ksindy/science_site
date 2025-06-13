@@ -1,3 +1,7 @@
+import { notFound } from "next/navigation"
+import { blogPosts } from "../../data/blogPosts"
+import { User, Calendar, Clock } from "lucide-react"
+
 // ✅ DO NOT use custom PageProps types
 export default function Page({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug)
