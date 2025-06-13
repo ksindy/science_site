@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
-import { type Metadata, type ResolvingMetadata } from "next"
 
 type PageProps = {
   params: {
