@@ -92,40 +92,40 @@ export default function BlogPage() {
 
         {/* Featured Post */}
         {blogPosts
-        .filter((post) => !post.featured)
-        .map((post, index) => (
-          <Link href={`/blog/${post.slug}`} key={index} className="block">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="aspect-video lg:aspect-auto relative">
-                  <Image src={post.image || "/grouping_microorganisms.png"} alt={post.title} fill className="object-cover" />
-                </div>
-                <div className="p-8 flex flex-col justify-center">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Badge>{post.category}</Badge>
-                    <Badge variant="outline">Featured</Badge>
+          .filter((post) => post.featured)
+          .map((post, index) => (
+            <Link href={`/blog/${post.slug}`} key={index} className="block">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div className="aspect-video lg:aspect-auto relative">
+                    <Image src={post.image || "/grouping_microorganisms.png"} alt={post.title} fill className="object-cover" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-4">{post.title}</h2>
-                  <p className="text-slate-600 mb-6 leading-relaxed">{post.excerpt}</p>
-                  <div className="flex items-center text-sm text-slate-500 space-x-4">
-                    <div className="flex items-center">
-                      <User className="h-4 w-4 mr-1" />
-                      Karly Sindy
+                  <div className="p-8 flex flex-col justify-center">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Badge>{post.category}</Badge>
+                      <Badge variant="outline">Featured</Badge>
                     </div>
-                    <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {post.date}
-                    </div>
-                    <div className="flex items-center">
-                      <Clock className="h-4 w-4 mr-1" />
-                      {post.readTime}
+                    <h2 className="text-2xl font-bold text-slate-900 mb-4">{post.title}</h2>
+                    <p className="text-slate-600 mb-6 leading-relaxed">{post.excerpt}</p>
+                    <div className="flex items-center text-sm text-slate-500 space-x-4">
+                      <div className="flex items-center">
+                        <User className="h-4 w-4 mr-1" />
+                        Karly Sindy
+                      </div>
+                      <div className="flex items-center">
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {post.date}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1" />
+                        {post.readTime}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Card>
-          </Link>
-          ))}
+              </Card>
+            </Link>
+        ))}
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
