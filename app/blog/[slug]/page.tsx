@@ -1,8 +1,15 @@
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
+import { type Metadata, type ResolvingMetadata } from "next"
 
-export default function Page({ params }: { params: { slug: string } }) {
+type PageProps = {
+  params: {
+    slug: string
+  }
+}
+
+export default function Page({ params }: PageProps) {
   const post = blogPosts.find((p) => p.slug === params.slug)
 
   if (!post) return notFound()
@@ -18,8 +25,4 @@ export default function Page({ params }: { params: { slug: string } }) {
       <p className="text-lg leading-relaxed">{post.excerpt}</p>
     </div>
   )
-}
-
-export function generateStaticParams() {
-  return blogPosts.map(post => ({ slug: post.slug }))
 }
