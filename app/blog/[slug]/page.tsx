@@ -1,5 +1,3 @@
-import { notFound } from "next/navigation"
-import { blogPosts } from "../../data/blogPosts"
 import { User, Calendar, Clock } from "lucide-react"
 
 // ✅ DO NOT use custom PageProps types
