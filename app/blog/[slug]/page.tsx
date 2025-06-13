@@ -1,5 +1,6 @@
+// app/blog/[slug]/page.tsx
 import { notFound } from "next/navigation"
-import { blogPosts } from "../../data/blogPosts"
+import { blogPosts } from "@/data/blogPosts"
 import { Calendar, Clock, User } from "lucide-react"
 
 export default function Page({ params }: { params: { slug: string } }) {
@@ -18,4 +19,8 @@ export default function Page({ params }: { params: { slug: string } }) {
       <p className="text-lg leading-relaxed">{post.excerpt}</p>
     </div>
   )
+}
+
+export function generateStaticParams() {
+  return blogPosts.map(post => ({ slug: post.slug }))
 }
