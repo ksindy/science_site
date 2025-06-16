@@ -3,7 +3,7 @@
 export const blogPosts = [
   {
     title: "Grouping Microorganisms Activity",
-    slug: "grouping-microorganisms-activity",
+    slug: "GroupingActivity",
     date: "June 12, 2024",
     readTime: "8 min read",
     excerpt: "Teaching students about grouping organisms...",
