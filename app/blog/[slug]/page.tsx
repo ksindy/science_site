@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { User, Calendar, Clock } from "lucide-react"
-// Optionally import a Markdown renderer if you use markdown for post content
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug)
@@ -9,7 +8,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl bg-white shadow rounded-lg">
-      {/* Optional: Show featured image */}
       {post.image && (
         <img
           src={post.image}
@@ -24,10 +22,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="flex items-center"><Calendar className="h-4 w-4 mr-1" />{post.date}</div>
         <div className="flex items-center"><Clock className="h-4 w-4 mr-1" />{post.readTime}</div>
       </div>
-      {/* Replace excerpt with full content if available */}
       <div className="prose prose-lg">
-        {/* If using markdown: <Markdown>{post.content}</Markdown> */}
- 
+        {/* Optionally render post.content here if you have it */}
+
       </div>
     </article>
   )
