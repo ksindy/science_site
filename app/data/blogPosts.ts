@@ -11,5 +11,15 @@ export const blogPosts = [
     category: "Activity",
     featured: true,
   },
+    {
+    title: "Aquarium",
+    slug: "AquariumActivity",
+    date: "June 16, 2024",
+    readTime: "8 min read",
+    excerpt: "Teaching students about grouping organisms...",
+    image: "",
+    category: "Activity",
+    featured: true,
+  },
   // ...more posts
 ]

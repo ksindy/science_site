@@ -1,21 +1,27 @@
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../data/blogPosts"
 import { User, Calendar, Clock } from "lucide-react"
+import Image from "next/image"
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+interface BlogPostPageProps {
+  params: { slug: string }
+}
+
+export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogPosts.find((p) => p.slug === params.slug)
   if (!post) return notFound()
 
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl bg-white shadow rounded-lg">
       {post.image && (
-        <img
+        <Image
           src={post.image}
           alt={post.title}
+          width={800}
+          height={400}
           className="w-full mb-6 rounded"
         />
       )}
-
       <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
       <div className="flex items-center gap-6 text-slate-500 mb-6 text-sm">
         <div className="flex items-center"><User className="h-4 w-4 mr-1" />Karly Sindy</div>
@@ -23,8 +29,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="flex items-center"><Clock className="h-4 w-4 mr-1" />{post.readTime}</div>
       </div>
       <div className="prose prose-lg">
-        {/* Optionally render post.content here if you have it */}
-
+        {post.content || post.excerpt}
       </div>
     </article>
   )
