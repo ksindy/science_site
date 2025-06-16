@@ -8,6 +8,7 @@ export const blogPosts = [
     readTime: "8 min read",
     excerpt: "Teaching students about grouping organisms...",
     image: "/grouping_microorganisms.png?height=200&width=400",
+    content: "content",
     category: "Activity",
     featured: true,
   },
@@ -19,7 +20,7 @@ export const blogPosts = [
     excerpt: "Teaching students about grouping organisms...",
     image: "",
     category: "Activity",
-    featured: true,
+    featured: false,
   },
   // ...more posts
 ]
