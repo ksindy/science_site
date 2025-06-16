@@ -27,7 +27,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {/* Replace excerpt with full content if available */}
       <div className="prose prose-lg">
         {/* If using markdown: <Markdown>{post.content}</Markdown> */}
-        {post.content ? post.content : post.excerpt}
+ 
       </div>
     </article>
   )
